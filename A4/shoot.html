@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title> Shoot! </title>
+    <style>
+      body, html {
+        margin: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4; /* Light gray background color */
+        font-family: Arial, sans-serif; /* Default font */
+      }
+  
+      form {
+        background-color: #fff; /* White background color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+        text-align: center;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+  
+      input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc; /* Light gray border */
+        border-radius: 5px;
+        box-sizing: border-box; /* Ensure padding is included in width */
+        font-size: 16px;
+      }
+  
+      input[type="submit"] {
+        background-color: #4CAF50; /* Green submit button */
+        color: #fff; /* White text */
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s; /* Smooth transition */
+      }
+  
+      input[type="submit"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+  
+      h3 {
+        margin-top: 20px;
+      }
+    </style>
+    
+    
+  </head>
+  <body>
+    <form action="display.html" method="post">
+        
+        <label for="player1">Player 1</label>
+        <input type="text" id="player1" name="player1" size="10" />
+        <label for="player2">Player 2</label>
+        <input type="text" id="player2" name="player2" size="10" />
+        <label for="gamename">Game Name</label>
+        <input type="text" id="gamename" name="gamename" size="10" />
+        <h3> <input type="submit" value="Play" /> </h3>
+    </form>
+    
+        
+
+</body>
+</html>
+
